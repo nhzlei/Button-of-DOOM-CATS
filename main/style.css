@@ -1,0 +1,63 @@
+
+h1 {
+	text-align: center;
+	font-size: 50px;
+	font-family: Monaco, Consolas, 'Lucida Console', monospace;
+}
+
+h2 {
+	font-size: 30px;
+	font-family: Monaco, Consolas, 'Lucida Console', monospace;
+}
+
+body {
+	margin: 20px;
+	padding: 0;
+	overflow: hidden;
+	user-select: none;
+}
+
+.cat-button_position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  box-sizing: border-box;
+  
+}
+
+.cat-button {
+  display: inline-block;
+  padding: 4rem 6rem;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  background-image: url('images/fat_cat_1.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150% 150%;
+  outline: none;
+  color: #FFF;
+  background-color: #ff0e62;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px #888;
+  position: relative;
+  top: -9rem;
+}
+
+.cat-button:hover {
+	background-color: #ff00b2
+}
+
+.cat-button:active {
+  background-color: #ffa6e4;
+  box-shadow: 0 5px #555;
+  transform: translateY(4px);
+  transform: scale(1.05);
+}
+
+/* CSS essentials module 6.3.4 for slide in menu (for the upgrades)
+   Module 6.5.4 for sliding animation (for tips or news to pop up 4 user
+   Module 6.6.1 for bouncing animation (item dropping, chonk coins + brought items*/
