@@ -10,6 +10,10 @@ h2 {
 	font-family: Monaco, Consolas, 'Lucida Console', monospace;
 }
 
+html{
+  overflow: hidden;
+}
+
 body {
 	margin: 20px;
 	padding: 0;
@@ -17,11 +21,24 @@ body {
 	user-select: none;
 }
 
+.left-section img{
+  width: 4rem;
+  height: 4rem;
+}
+
+/*upgrades*/
+.upgrades {
+  position:relative;
+  justify-content: center;
+  background-color: #ff0e62;
+}
+
+/*main cat button*/
 .cat-button_position {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 45rem;
   box-sizing: border-box;
   
 }
@@ -33,7 +50,7 @@ body {
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  background-image: url('images/fat_cat_1.jpeg');
+  background-image: url('../images/fat_cat_1.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 150% 150%;
@@ -44,7 +61,7 @@ body {
   border-radius: 15px;
   box-shadow: 0 8px #888;
   position: relative;
-  top: -9rem;
+  top: -10rem;
 }
 
 .cat-button:hover {

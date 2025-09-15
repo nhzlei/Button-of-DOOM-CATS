@@ -7,3 +7,10 @@ function cat_clicked() {
 	audio.currentTime =  0;
 	audio.play();
 }
+
+function upgrade1() {
+	point += 2;
+	document.querySelector(".point").textContent = point;
+	audio.currentTime =  0;
+	audio.play();
+}
