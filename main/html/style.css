@@ -33,8 +33,13 @@ body {
   border: 0.5rem solid #ff0e62;
   border-radius: 1.5rem;
   padding-bottom: 1.5rem;
+
   width: 20rem;
   height: 2.5rem;
+}
+
+.upgrades:hover{
+  cursor: pointer;
 }
 
 .upgrade-img{
@@ -63,12 +68,22 @@ padding-left: 1.5rem;
 
 }
 
-.right-section p{
-  margin-bottom: -0.5rem;
+.right-section{
+  margin-bottom: -1.5rem;
   margin-right: 1rem;  
   padding: 0px;
 }
 
+.next_lvl_info {
+  position: flex;
+  margin-right: -6rem;
+
+  background-color: #ff92b8;
+  border: 0.5rem solid #ff92b8;
+  width: 4.5rem;
+  height: 4rem;
+  margin-top: 2rem;
+}
 
 /*main cat button*/
 .cat-button_position {

@@ -1,16 +1,22 @@
-let point = 0;
+let point = document.querySelector('.point')
+let parse_point = parseFloat(point.innerHTML)
+
+let point_cost = document.querySelector('.treat-cost')
+let parsed_treat = parseFloat(point_cost.innerHTML)
+
 const audio1 = document.getElementById("meowcat1")
 
 function cat_clicked() {
-	point += 1;
-	document.querySelector(".point").textContent = point;
+	parse_point +=1
+	point.innerHTML = parse_point 
+
 	audio1.currentTime =  0;
 	audio1.play();
 }
 
-function upgrade1() {
-	point += 2;
-	document.querySelector(".point").textContent = point;
-	audio1.currentTime =  0;
-	audio1.play();
+function buy_treat() {
+	if (parse_point >= parsed_treat) {
+			parse_point -= parsed_treat
+			point.innerHTML = parse_point
+	}
 }
