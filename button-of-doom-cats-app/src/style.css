@@ -1,0 +1,138 @@
+h1 {
+	text-align: center;
+	font-size: 50px;
+	font-family: Monaco, Consolas, 'Lucida Console', monospace;
+}
+
+h2 {
+	font-size: 30px;
+	font-family: Monaco, Consolas, 'Lucida Console', monospace;
+}
+
+html{
+  overflow: hidden;
+}
+
+body {
+	margin: 20px;
+	padding: 0;
+	overflow: hidden;
+	user-select: none;
+}
+
+/*upgrades*/
+
+.upgrades {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  flex-direction: row;
+
+  background-color: #ff0e62;
+  border: 0.5rem solid #ff0e62;
+  border-radius: 1.5rem;
+  padding-bottom: 1.5rem;
+
+  width: 20rem;
+  height: 2.5rem;
+}
+
+.upgrades:hover{
+  cursor: pointer;
+}  
+.upgrades:hover .next_lvl_info{
+    display: block;
+}
+
+.upgrade-img{
+width: 3.5rem;
+padding-top: 1.2rem;
+padding-left: 1.5rem;
+}
+
+.mid-section h4, p{
+  margin-bottom: 4px;
+  margin-right: -1.5rem;  
+  padding: 0px;
+}
+
+.chonk-coins{
+  width: 1.5rem;
+  height: 1.5rem;
+  padding-top: 0.7rem;
+  padding-left: 1rem;
+}
+
+.chonk-coins-info{
+  display: flex;
+  gap: 1rem;
+
+}
+
+.right-section{
+  margin-bottom: -1.5rem;
+  margin-right: 1rem;  
+  padding: 0px;
+}
+
+.next_lvl_info {
+  position: flex;
+  margin-right: -8.4rem;
+
+  background-color: #ff92b8;
+  border: 0.5rem solid #ff92b8;
+  width: 4.5rem;
+  height: 4rem;
+  margin-top: 2rem;
+  display: none;
+}
+
+/*main cat button*/
+.cat-button_position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45rem;
+  box-sizing: border-box;
+}
+
+.cat-button {
+  display: inline-block;
+  padding: 4rem 6rem;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  background-image: url('./assets/fat_cat_1.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150% 150%;
+  outline: none;
+  color: #FFF;
+  background-color: #ff0e62;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px #888;
+  position: relative;
+  top: -10rem;
+}
+
+.cat-button:hover {
+	background-color: #ff00b2
+}
+
+.cat-button:active {
+  background-color: #ffa6e4;
+  box-shadow: 0 5px #555;
+  transform: translateY(4px);
+  transform: scale(1.05);
+}
+
+.left_tab {
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
+/* CSS essentials module 6.3.4 for slide in menu (for the upgrades)
+   Module 6.5.4 for sliding animation (for tips or news to pop up 4 user
+   Module 6.6.1 for bouncing animation (item dropping, chonk coins + brought items*/
