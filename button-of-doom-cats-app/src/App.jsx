@@ -8,9 +8,12 @@ function App() {
   const [points, setPoints] = useState(0);
   const [upgrades, setUpgrades] = useState([
     { id: 1, name: 'Treats', cost: 10, level: 0, increase: 1, img: upgradeImg },
-    { id: 2, name: 'Super Treats', cost: 50, level: 0, increase: 5, img: upgradeImg }
+    { id: 2, name: 'Super Treats', cost: 20, level: 0, increase: 5, img: upgradeImg },
+    { id: 3, name: 'scratch post upgrade', cost: 50, level: 0, increase: 10, img: upgradeImg },
+    { id: 4, name: 'yarn ball', cost: 100, level: 0, increase: 20, img: upgradeImg }
   ]);
   const [perSecond, setPerSecond] = useState(0);
+  const [upgradesOpen, setUpgradesOpen] = useState(false);
 
   useEffect(() => {
     const total = upgrades.reduce((sum, u) => sum + u.level * u.increase, 0);
@@ -37,12 +40,16 @@ function App() {
 
   return (
     <>
-      <h1>click the fatty</h1>
+      <div className="center-header">
+        <h1>click the fatty</h1>
+        <h2>chonk coins : <span className="point">{points}</span> (+{perSecond}/s)</h2>
+      </div>
       <section>
-        <div className="main">
-          <h2>chonk coins : <span className="point">{points}</span> (+{perSecond}/s)</h2>
-          
-          <div className="left_tab">
+        
+        <div className="tab_handle" onClick={() => setUpgradesOpen(!upgradesOpen)}></div>
+        
+        {upgradesOpen && (
+          <div className="upgrades_tab">
             {upgrades.map(upgrade => (
               <div key={upgrade.id} className={`buy_treat${upgrade.id}`}>
                 <Upgrade 
@@ -56,7 +63,9 @@ function App() {
               </div>
             ))}
           </div>
-          
+        )}
+        
+        <div className="main">
           <div className="center">
             <CatButton onClick={catClicked} />
           </div>
